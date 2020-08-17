@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowManager.Core", "ControlFlowManager.Core\ControlFlowManager.Core.csproj", "{F8106D7F-572E-46B4-9840-516C064C8B36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowManager", "ControlFlowManager\ControlFlowManager.csproj", "{61643211-389D-4DCB-B462-D365A58FCCCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API - ControlFlowManager", "API - ControlFlowManager", "{9372AC7C-8490-428D-9136-05A8AE83676A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB - HumanBeing", "LIB - HumanBeing", "{018FE2B3-BF26-40AC-8C60-3865DF30D30B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumanBeing", "HumanBeing\HumanBeing.csproj", "{D9046B20-B0F6-4B41-9F77-AA5A805B5C91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumanBeing.Core", "HumanBeing.Core\HumanBeing.Core.csproj", "{87FEF12C-55BB-4887-A952-5FB5E08C3AE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowManager.Tests", "ControlFlowManager.Tests\ControlFlowManager.Tests.csproj", "{42BCA2A7-7DFA-467B-BBCD-E70DC4163208}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HumanBeing.CLI", "HumanBeing.CLI\HumanBeing.CLI.csproj", "{1947563C-4E3D-423A-BE18-8C96AEEE917E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8106D7F-572E-46B4-9840-516C064C8B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8106D7F-572E-46B4-9840-516C064C8B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8106D7F-572E-46B4-9840-516C064C8B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8106D7F-572E-46B4-9840-516C064C8B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61643211-389D-4DCB-B462-D365A58FCCCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61643211-389D-4DCB-B462-D365A58FCCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61643211-389D-4DCB-B462-D365A58FCCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61643211-389D-4DCB-B462-D365A58FCCCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9046B20-B0F6-4B41-9F77-AA5A805B5C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9046B20-B0F6-4B41-9F77-AA5A805B5C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9046B20-B0F6-4B41-9F77-AA5A805B5C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9046B20-B0F6-4B41-9F77-AA5A805B5C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87FEF12C-55BB-4887-A952-5FB5E08C3AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87FEF12C-55BB-4887-A952-5FB5E08C3AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87FEF12C-55BB-4887-A952-5FB5E08C3AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87FEF12C-55BB-4887-A952-5FB5E08C3AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BCA2A7-7DFA-467B-BBCD-E70DC4163208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BCA2A7-7DFA-467B-BBCD-E70DC4163208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BCA2A7-7DFA-467B-BBCD-E70DC4163208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BCA2A7-7DFA-467B-BBCD-E70DC4163208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1947563C-4E3D-423A-BE18-8C96AEEE917E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1947563C-4E3D-423A-BE18-8C96AEEE917E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1947563C-4E3D-423A-BE18-8C96AEEE917E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1947563C-4E3D-423A-BE18-8C96AEEE917E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8106D7F-572E-46B4-9840-516C064C8B36} = {9372AC7C-8490-428D-9136-05A8AE83676A}
+		{61643211-389D-4DCB-B462-D365A58FCCCC} = {9372AC7C-8490-428D-9136-05A8AE83676A}
+		{D9046B20-B0F6-4B41-9F77-AA5A805B5C91} = {018FE2B3-BF26-40AC-8C60-3865DF30D30B}
+		{87FEF12C-55BB-4887-A952-5FB5E08C3AE2} = {018FE2B3-BF26-40AC-8C60-3865DF30D30B}
+		{42BCA2A7-7DFA-467B-BBCD-E70DC4163208} = {9372AC7C-8490-428D-9136-05A8AE83676A}
+		{1947563C-4E3D-423A-BE18-8C96AEEE917E} = {018FE2B3-BF26-40AC-8C60-3865DF30D30B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9059409D-7028-4B6F-8355-188757F75165}
+	EndGlobalSection
+EndGlobal

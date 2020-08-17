@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ControlFlowManager\ControlFlowManager.csproj" />
+    <ProjectReference Include="..\HumanBeing.Core\HumanBeing.Core.csproj" />
+    <ProjectReference Include="..\HumanBeing\HumanBeing.csproj" />
+  </ItemGroup>
+
+</Project>

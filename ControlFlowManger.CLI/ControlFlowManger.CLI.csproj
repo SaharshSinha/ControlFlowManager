@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ControlFlowManager.Core\ControlFlowManager.Core.csproj" />
+    <ProjectReference Include="..\ControlFlowManager\ControlFlowManager.csproj" />
+    <ProjectReference Include="..\HumanBeing.Core\HumanBeing.Core.csproj" />
+    <ProjectReference Include="..\HumanBeing\HumanBeing.csproj" />
+  </ItemGroup>
+
+</Project>
