@@ -9,17 +9,16 @@ namespace ControlFlowManager.Core.Definitions
     public class ControlFlowDoer<TControllableStep> : IControlFlowDoer<TControllableStep>
         where TControllableStep : IControlFlowStep
     {
-        private IControlFlowStepThener<TControllableStep> _controlFlowStepThener => _controlFlowThener;
-        private protected ControlFlowThener<TControllableStep> _controlFlowThener;
+        private protected ControlFlowThenDoer<TControllableStep> _controlFlowThenDoer;
         internal protected List<Type> _mostRecentCollectionOfConcurrentSteps;
         internal protected List<List<Type>> _sequenceOfGroupsOfStepsToExecute = new List<List<Type>>();
 
-        public IControlFlowStepThener<TControllableStep> Do<TControllableStepAlias>() 
+        public IControlFlowStepThenDoer<TControllableStep> Do<TControllableStepAlias>() 
             where TControllableStepAlias : TControllableStep
         {
             _mostRecentCollectionOfConcurrentSteps
                 .Add(typeof(TControllableStepAlias));
-            return _controlFlowStepThener;
+            return _controlFlowThenDoer;
         }
     }
 }

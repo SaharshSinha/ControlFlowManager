@@ -12,7 +12,7 @@
         /// </summary>
         /// <typeparam name="TControllableStepAlias"></typeparam>
         /// <returns></returns>
-        IControlFlowStepThener<TControllableStep> Do<TControllableStepAlias>()
+        IControlFlowStepThenDoer<TControllableStep> Do<TControllableStepAlias>()
             where TControllableStepAlias : TControllableStep;
     }
 

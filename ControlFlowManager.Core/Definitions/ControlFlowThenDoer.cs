@@ -5,13 +5,13 @@ using System.Linq;
 
 namespace ControlFlowManager.Core.Definitions
 {
-    public class ControlFlowThener<TControllableStep> :
-        ControlFlowDoer<TControllableStep>, IControlFlowStepThener<TControllableStep>
+    public class ControlFlowThenDoer<TControllableStep> :
+        ControlFlowDoer<TControllableStep>, IControlFlowStepThenDoer<TControllableStep>
         where TControllableStep : IControlFlowStep
     {
-        public ControlFlowThener() 
+        public ControlFlowThenDoer() 
         {
-            _controlFlowThener = this;
+            _controlFlowThenDoer = this;
         }
 
         public IControlFlowDoer<TControllableStep> Then()

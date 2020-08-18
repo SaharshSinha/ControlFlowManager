@@ -11,7 +11,7 @@
         /// Readies the control flow scheduler for sequence definition
         /// </summary>
         /// <returns></returns>
-        IControlFlowStepThener<TControllableStep> Initialize();
+        IControlFlowStepThenDoer<TControllableStep> Initialize();
 
         /// <summary>
         /// executes the currently defined sequence 

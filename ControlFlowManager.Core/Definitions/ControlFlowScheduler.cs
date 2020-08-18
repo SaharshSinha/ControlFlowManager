@@ -10,13 +10,13 @@ namespace ControlFlowManager.Core.Definitions
         where TControllableStep : IControlFlowStep
     {
         #region PRIVATES
-        private readonly Func<IControlFlowStepThener<TControllableStep>> _controlFlowStepGrouperFactory;
-        private IControlFlowStepThener<TControllableStep> _controlFlowStepThener;
+        private readonly Func<IControlFlowStepThenDoer<TControllableStep>> _controlFlowStepGrouperFactory;
+        private IControlFlowStepThenDoer<TControllableStep> _controlFlowStepThenDoer;
         private IDictionary<Type, IControlFlowStep> _controllableStepsDictionary;
         #endregion
 
         public ControlFlowScheduler(
-            Func<IControlFlowStepThener<TControllableStep>> controlFlowStepGrouperFactory,
+            Func<IControlFlowStepThenDoer<TControllableStep>> controlFlowStepGrouperFactory,
             IEnumerable<TControllableStep> controllableSteps)
         {
             _controlFlowStepGrouperFactory = controlFlowStepGrouperFactory;
@@ -27,16 +27,16 @@ namespace ControlFlowManager.Core.Definitions
             }
         }
 
-        public IControlFlowStepThener<TControllableStep> Initialize()
+        public IControlFlowStepThenDoer<TControllableStep> Initialize()
         {
-            _controlFlowStepThener = _controlFlowStepGrouperFactory.Invoke();
-            return _controlFlowStepThener;
+            _controlFlowStepThenDoer = _controlFlowStepGrouperFactory.Invoke();
+            return _controlFlowStepThenDoer;
         }
 
         public void Execute()
         { 
             foreach (IReadOnlyCollection<Type> groupsOfStepsToExecute in 
-                ((ControlFlowDoer<TControllableStep>)(_controlFlowStepThener))._sequenceOfGroupsOfStepsToExecute)
+                ((ControlFlowDoer<TControllableStep>)(_controlFlowStepThenDoer))._sequenceOfGroupsOfStepsToExecute)
             {
                 if (groupsOfStepsToExecute.Count == 1)
                     ExecuteStep(groupsOfStepsToExecute.First());

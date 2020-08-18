@@ -8,7 +8,7 @@ namespace ControlFlowManager.Declarations
     /// of ControlFlowSteps as per to the schedule
     /// </summary>
     /// <typeparam name="TControllableStep"></typeparam>
-    public interface IControlFlowStepThener<TControllableStep> : IControlFlowDoer<TControllableStep>
+    public interface IControlFlowStepThenDoer<TControllableStep> : IControlFlowDoer<TControllableStep>
         where TControllableStep : IControlFlowStep
     {
         /// <summary>

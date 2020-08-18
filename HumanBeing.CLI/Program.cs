@@ -42,8 +42,8 @@ namespace HumanBeing.CLI
                 .InstancePerLifetimeScope();
 
             builder
-                .RegisterType<ControlFlowThener<IDailyTask>>()
-                .As<IControlFlowStepThener<IDailyTask>>()
+                .RegisterType<ControlFlowThenDoer<IDailyTask>>()
+                .As<IControlFlowStepThenDoer<IDailyTask>>()
                 .InstancePerLifetimeScope();
 
             builder
@@ -59,8 +59,8 @@ namespace HumanBeing.CLI
                 .InstancePerLifetimeScope();
 
             builder
-                .RegisterType<ControlFlowThener<ISchoolTask>>()
-                .As<IControlFlowStepThener<ISchoolTask>>()
+                .RegisterType<ControlFlowThenDoer<ISchoolTask>>()
+                .As<IControlFlowStepThenDoer<ISchoolTask>>()
                 .InstancePerLifetimeScope();
 
             builder
